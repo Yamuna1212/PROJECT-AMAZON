@@ -1,0 +1,160 @@
+.signInContainer {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.showPasswordButton:hover {
+  text-decoration: underline;
+}
+
+.extraOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.rememberMe input {
+  margin-right: 5px;
+}
+
+.forgotPassword {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.signInButton {
+  padding: 10px;
+  background-color: #fec64d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signInButton:hover {
+  background-color: #e6b300;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #007BFF;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.socialSignIn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialButton {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#google {
+  background-color: #db4437;
+}
+
+#google:hover {
+  background-color: #c23321;
+}
+
+#facebook {
+  background-color: #4267B2;
+}
+
+#facebook:hover {
+  background-color: #365899;
+}
+
+#twitter {
+  background-color: #1DA1F2;
+}
+
+#twitter:hover {
+  background-color: #0d95e8;
+}

@@ -1,0 +1,93 @@
+.wrapper {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgContainer {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.imgContainer img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: #333;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #b12704;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.shopNow {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto;
+  color: #fff;
+  background-color: #ff9900;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: block; /* Ensure it behaves like a block element */
+  text-align: center; /* Center text */
+}
+
+.shopNow:hover {
+  background-color: #e68a00;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .wrapper {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+    height: auto;
+  }
+  .imgContainer img {
+    width: 80%;
+  }
+}
